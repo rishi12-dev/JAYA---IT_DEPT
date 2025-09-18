@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus | IT Department - Jaya Engineering College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="syllabus.css">
+    <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+ 
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhN9hNNRvLJpbnZpr6WnBGXLPfOCn3ZVYOgWUer7UepC2BIxLIy4kMkP2NEzfiqGpsQtk&usqp=CAU" alt="College Logo">                <span class="logo-text">Jaya IT Department</span>
+            </div>
+            
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<div class="nav-links" id="nav-links">
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="/syllabus.html" class="active"><i class="fas fa-book"></i> Syllabus</a>
+  <a href="/time-table.html"><i class="fas fa-clock"></i> Timetable</a>
+  <a href="/Faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a>
+</div>
+
+    </nav>
+
+    <!-- Syllabus Hero -->
+    <section class="syllabus-hero">
+        <h1>Curriculum & Syllabus</h1>
+        <p>Explore the comprehensive academic curriculum for all years of the Information Technology program</p>
+    </section>
+
+    <!-- Syllabus Content -->
+    <div class="syllabus-container">
+        <!-- Year Tabs -->
+        <div class="year-tabs">
+            <button class="year-tab active" data-year="first">First Year</button>
+            <button class="year-tab" data-year="second">Second Year</button>
+            <button class="year-tab" data-year="third">Third Year</button>
+            <button class="year-tab" data-year="fourth">Final Year</button>
+        </div>
+
+        <!-- First Year Syllabus -->
+        <div class="syllabus-content active" id="first-year">
+            <div class="semester-tabs">
+                <button class="semester-tab active" data-semester="first-sem">Semester I</button>
+                <button class="semester-tab" data-semester="second-sem">Semester II</button>
+            </div>
+
+            <div class="semester-content active" id="first-sem">
+                <h3>First Year - Semester I</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Technical English</span>
+                                <span class="subject-code">HS8151</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 4</p>
+                            <p><strong>Objective:</strong> To develop students' communication skills in technical English.</p>
+                            <p><strong>Units:</strong></p>
+                            <ol>
+                                <li>Listening and Speaking</li>
+                                <li>Reading and Writing</li>
+                                <li>Grammar and Vocabulary</li>
+                                <li>Technical Report Writing</li>
+                            </ol>
+                            <a href="/sylbus/FSWD front page-1-6.docx.pdf" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Engineering Mathematics I</span>
+                                <span class="subject-code">MA8151</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 4</p>
+                            <p><strong>Objective:</strong> To provide fundamental mathematical knowledge for engineering applications.</p>
+                            <p><strong>Units:</strong></p>
+                            <ol>
+                                <li>Matrices and Calculus</li>
+                                <li>Differential Equations</li>
+                                <li>Functions of Several Variables</li>
+                                <li>Integral Calculus</li>
+                            </ol>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Engineering Physics</span>
+                                <span class="subject-code">PH8151</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To impart fundamental knowledge in physics relevant to engineering.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Engineering Chemistry</span>
+                                <span class="subject-code">CY8151</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To provide basic chemistry knowledge applicable to engineering.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Problem Solving and Python Programming</span>
+                                <span class="subject-code">GE8151</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To introduce algorithmic problem solving and Python programming.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="semester-content" id="second-sem">
+                <h3>First Year - Semester II</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Engineering Mathematics II</span>
+                                <span class="subject-code">MA8251</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 4</p>
+                            <p><strong>Objective:</strong> Advanced mathematical concepts for engineering applications.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Basic Electrical and Electronics Engineering</span>
+                                <span class="subject-code">BE8251</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> Fundamentals of electrical and electronics engineering.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Engineering Graphics</span>
+                                <span class="subject-code">GE8152</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 4</p>
+                            <p><strong>Objective:</strong> To develop graphic skills for engineering applications.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">C Programming</span>
+                                <span class="subject-code">CS8251</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach fundamental programming concepts using C language.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Second Year Syllabus -->
+        <div class="syllabus-content" id="second-year">
+            <div class="semester-tabs">
+                <button class="semester-tab active" data-semester="third-sem">Semester III</button>
+                <button class="semester-tab" data-semester="fourth-sem">Semester IV</button>
+            </div>
+
+            <div class="semester-content active" id="third-sem">
+                <h3>Second Year - Semester III</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Data Structures</span>
+                                <span class="subject-code">CS8391</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach fundamental data structures and their applications.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Digital Principles and System Design</span>
+                                <span class="subject-code">CS8351</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 4</p>
+                            <p><strong>Objective:</strong> To introduce digital logic design and system concepts.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Object Oriented Programming</span>
+                                <span class="subject-code">CS8392</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach object-oriented programming concepts using Java.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="semester-content" id="fourth-sem">
+                <h3>Second Year - Semester IV</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Database Management Systems</span>
+                                <span class="subject-code">CS8492</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach database concepts and SQL programming.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Computer Networks</span>
+                                <span class="subject-code">CS8591</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To introduce networking concepts and protocols.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Operating Systems</span>
+                                <span class="subject-code">CS8493</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach operating system concepts and principles.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Third Year Syllabus -->
+        <div class="syllabus-content" id="third-year">
+            <div class="semester-tabs">
+                <button class="semester-tab active" data-semester="fifth-sem">Semester V</button>
+                <button class="semester-tab" data-semester="sixth-sem">Semester VI</button>
+            </div>
+
+            <div class="semester-content active" id="fifth-sem">
+                <h3>Third Year - Semester V</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Software Engineering</span>
+                                <span class="subject-code">CS8592</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach software development methodologies and processes.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Web Technology</span>
+                                <span class="subject-code">CS8651</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach web development technologies and frameworks.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Artificial Intelligence</span>
+                                <span class="subject-code">CS8691</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To introduce AI concepts and machine learning algorithms.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="semester-content" id="sixth-sem">
+                <h3>Third Year - Semester VI</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Cloud Computing</span>
+                                <span class="subject-code">CS8791</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach cloud computing concepts and services.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Big Data Analytics</span>
+                                <span class="subject-code">CS8091</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To introduce big data concepts and analytics tools.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Internet of Things</span>
+                                <span class="subject-code">CS8652</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach IoT concepts and applications.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fourth Year Syllabus -->
+        <div class="syllabus-content" id="fourth-year">
+            <div class="semester-tabs">
+                <button class="semester-tab active" data-semester="seventh-sem">Semester VII</button>
+                <button class="semester-tab" data-semester="eighth-sem">Semester VIII</button>
+            </div>
+
+            <div class="semester-content active" id="seventh-sem">
+                <h3>Final Year - Semester VII</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Cryptography and Network Security</span>
+                                <span class="subject-code">CS8792</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach security principles and cryptographic techniques.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Machine Learning</span>
+                                <span class="subject-code">CS8692</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To teach machine learning algorithms and applications.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Project Work - Phase I</span>
+                                <span class="subject-code">CS8811</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 4</p>
+                            <p><strong>Objective:</strong> To develop a project with real-world applications.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="semester-content" id="eighth-sem">
+                <h3>Final Year - Semester VIII</h3>
+                <ul class="subject-list">
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Blockchain Technology</span>
+                                <span class="subject-code">CS8092</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 3</p>
+                            <p><strong>Objective:</strong> To introduce blockchain concepts and applications.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                    <li class="subject-item">
+                        <div class="subject-header">
+                            <div>
+                                <span class="subject-title">Project Work - Phase II</span>
+                                <span class="subject-code">CS8812</span>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="subject-details">
+                            <p><strong>Credits:</strong> 8</p>
+                            <p><strong>Objective:</strong> To complete and present the project work.</p>
+                            <a href="#" class="download-syllabus">Download Detailed Syllabus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>IT Department</h3>
+                <p>Jaya Engineering College</p>
+                <p>Chennai, Tamil Nadu</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: itdept@jaya.edu</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 IT Department, Jaya Engineering College. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/syllabus.js"></script>
+
+</body>
+</html>

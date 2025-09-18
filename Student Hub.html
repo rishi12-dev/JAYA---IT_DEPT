@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Desk - Engineering Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="student-hub.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhN9hNNRvLJpbnZpr6WnBGXLPfOCn3ZVYOgWUer7UepC2BIxLIy4kMkP2NEzfiqGpsQtk&usqp=CAU" alt="College Logo">                <span class="logo-text">Jaya IT Department</span> -->
+            </div>
+            
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<div class="nav-links" id="nav-links">
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="/syllabus.html" class="active"><i class="fas fa-book"></i> Syllabus</a>
+  <a href="/time-table.html"><i class="fas fa-clock"></i> Timetable</a>
+  <a href="/Faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a>
+</div>
+
+    </nav>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Student Desk</h1>
+            <p>Your all-in-one engineering study companion</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- CGPA Calculator Section -->
+        <section class="cgpa-calculator">
+            <h2 class="section-title">CGPA Calculator</h2>
+            <div class="card">
+                <div class="input-group">
+                    <label for="semesterGPA">Semester GPA</label>
+                    <input type="number" id="semesterGPA" step="0.01" min="0" max="4" placeholder="Enter GPA (e.g., 3.75)">
+                </div>
+                <div class="input-group">
+                    <label for="semesterCredits">Credits</label>
+                    <input type="number" id="semesterCredits" min="1" placeholder="Enter credits (e.g., 15)">
+                </div>
+                <button class="btn btn-block" id="addSemester">Add Semester</button>
+                
+                <div class="semester-list" id="semesterList"></div>
+                
+                <button class="btn btn-block" id="calculateCGPA">Calculate CGPA</button>
+                
+                <div class="result" id="cgpaResult"></div>
+            </div>
+        </section>
+
+        <!-- Unit Converter Section -->
+        <section class="unit-converter">
+            <h2 class="section-title">Unit Converter</h2>
+            <div class="card">
+                <div class="converter">
+                    <div class="converter-row">
+                        <div class="converter-input">
+                            <label for="converterValue">Value</label>
+                            <input type="number" id="converterValue" placeholder="Enter value">
+                        </div>
+                        <div class="converter-input">
+                            <label for="converterFrom">From</label>
+                            <select id="converterFrom">
+                                <option value="cm">Centimeters</option>
+                                <option value="m">Meters</option>
+                                <option value="km">Kilometers</option>
+                                <option value="in">Inches</option>
+                                <option value="ft">Feet</option>
+                                <option value="mi">Miles</option>
+                                <option value="°C">Celsius</option>
+                                <option value="°F">Fahrenheit</option>
+                                <option value="K">Kelvin</option>
+                                <option value="g">Grams</option>
+                                <option value="kg">Kilograms</option>
+                                <option value="lb">Pounds</option>
+                            </select>
+                        </div>
+                        <div class="converter-input">
+                            <label for="converterTo">To</label>
+                            <select id="converterTo">
+                                <option value="cm">Centimeters</option>
+                                <option value="m">Meters</option>
+                                <option value="km">Kilometers</option>
+                                <option value="in">Inches</option>
+                                <option value="ft">Feet</option>
+                                <option value="mi">Miles</option>
+                                <option value="°C">Celsius</option>
+                                <option value="°F">Fahrenheit</option>
+                                <option value="K">Kelvin</option>
+                                <option value="g">Grams</option>
+                                <option value="kg">Kilograms</option>
+                                <option value="lb">Pounds</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-block" id="convertBtn">Convert</button>
+                    <div class="result" id="converterResult"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="notes">
+            <h2 class="section-title">Quick Notes</h2>
+            <div class="card">
+                <div class="notes-container" id="notesContainer"></div>
+                
+                <div class="add-note-form">
+                    <h3>Add New Note</h3>
+                    <div class="form-group">
+                        <label for="noteTitle">Title</label>
+                        <input type="text" id="noteTitle" placeholder="Enter note title">
+                    </div>
+                    <div class="form-group">
+                        <label for="noteContent">Content</label>
+                        <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+                    </div>
+                    <button class="btn" id="saveNote">Save Note</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources">
+            <h2 class="section-title">Useful Resources</h2>
+            <div class="card">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon"><i class="fab fa-github"></i></div>
+                        <div class="resource-name">GitHub</div>
+                        <a href="https://github.com" class="resource-link" target="_blank">Visit</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon"><i class="fas fa-code"></i></div>
+                        <div class="resource-name">GeeksforGeeks</div>
+                        <a href="https://geeksforgeeks.org" class="resource-link" target="_blank">Visit</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon"><i class="fab fa-stack-overflow"></i></div>
+                        <div class="resource-name">Stack Overflow</div>
+                        <a href="https://stackoverflow.com" class="resource-link" target="_blank">Visit</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="resource-name">NPTEL</div>
+                        <a href="https://nptel.ac.in" class="resource-link" target="_blank">Visit</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon"><i class="fab fa-youtube"></i></div>
+                        <div class="resource-name">YouTube</div>
+                        <a href="https://youtube.com" class="resource-link" target="_blank">Visit</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon"><i class="fas fa-book"></i></div>
+                        <div class="resource-name">Coursera</div>
+                        <a href="https://coursera.org" class="resource-link" target="_blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivational Quote Section -->
+        <section class="motivation">
+            <h2 class="section-title">Daily Motivation</h2>
+            <div class="card">
+                <div class="quote-container" id="quoteContainer">
+                    <div class="quote-text" id="quoteText">Loading motivational quote...</div>
+                    <div class="quote-author" id="quoteAuthor"></div>
+                    <button class="btn refresh-quote" id="refreshQuote">New Quote</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Student Desk | Designed for Engineering Students</p>
+        </div>
+    </footer>
+
+   <script src="/student-hub.js"></script>
+</body>
+</html>

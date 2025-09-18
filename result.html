@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Engineering College - Result System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    
+    
+    <!-- Admin Button -->
+    <button class="admin-btn" id="adminBtn">
+        <i class="fas fa-user-shield"></i> Admin Login
+    </button>
+    
+    <!-- Admin Login Modal -->
+    <div class="modal" id="adminModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Admin Login</h3>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-control" placeholder="Enter admin username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Jaya Engineering College</div>
+            <div class="tagline">Examination Result Portal</div>
+            <div class="college-info">Affiliated to Anna University | Accredited by NBA | ISO 9001:2015 Certified</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Admin Panel (Hidden by default) -->
+        <div class="admin-panel" id="adminPanel">
+            <div class="admin-welcome">
+                <h2>Welcome, Admin</h2>
+                <p>Manage student results and internal assessments</p>
+            </div>
+            
+            <div class="upload-section">
+                <h3 class="section-title">Upload Internal Assessment Results</h3>
+                <p>Upload a CSV or Excel file containing student internal assessment marks. File should include: Roll Number, Name, Subject-wise Marks, and Total.</p>
+                
+                <div class="file-upload" id="fileUpload">
+                    <i class="fas fa-file-excel"></i>
+                    <input type="file" id="resultFile" accept=".csv,.xlsx,.xls">
+                    <label for="resultFile">Choose Result File</label>
+                    <div class="file-info" id="fileInfo">No file selected</div>
+                </div>
+                
+                <div class="alert alert-success" id="successAlert">
+                    <i class="fas fa-check-circle"></i> Internal assessment results uploaded successfully!
+                </div>
+                
+                <div class="alert alert-danger" id="errorAlert">
+                    <i class="fas fa-exclamation-circle"></i> Error uploading file. Please check the format and try again.
+                </div>
+                
+                <button class="btn" id="uploadBtn">Upload Results</button>
+            </div>
+            
+            <div class="manual-entry">
+                <h3 class="section-title">Manual Entry</h3>
+                <p>Enter student marks manually for internal assessments:</p>
+                
+                <div class="manual-entry-form">
+                    <div class="form-group">
+                        <label for="manualRoll">Roll Number</label>
+                        <input type="text" id="manualRoll" class="form-control" placeholder="Enter roll number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="manualName">Student Name</label>
+                        <input type="text" id="manualName" class="form-control" placeholder="Enter student name" required>
+                    </div>
+                </div>
+                
+                <div class="marks-entry">
+                    <h4>Enter Marks</h4>
+                    <div class="marks-entry-grid">
+                        <div class="form-group">
+                            <label for="subject1">Subject 1</label>
+                            <input type="number" id="subject1" class="form-control" placeholder="Enter marks" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject2">Subject 2</label>
+                            <input type="number" id="subject2" class="form-control" placeholder="Enter marks" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject3">Subject 3</label>
+                            <input type="number" id="subject3" class="form-control" placeholder="Enter marks" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject4">Subject 4</label>
+                            <input type="number" id="subject4" class="form-control" placeholder="Enter marks" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject5">Subject 5</label>
+                            <input type="number" id="subject5" class="form-control" placeholder="Enter marks" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject6">Subject 6</label>
+                            <input type="number" id="subject6" class="form-control" placeholder="Enter marks" min="0" max="100">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn" id="saveManualBtn">Save Student Marks</button>
+                <div class="alert alert-success" id="manualSuccessAlert" style="display: none; margin-top: 20px;">
+                    <i class="fas fa-check-circle"></i> Student marks saved successfully!
+                </div>
+            </div>
+        </div>
+        
+        <!-- Student Search -->
+        <section class="student-search">
+            <h2 class="section-title">Check Your Internal Assessment Result</h2>
+            
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="rollNumber">Roll Number</label>
+                    <input type="text" id="rollNumber" class="form-control" placeholder="Enter your roll number" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" class="form-control" required>
+                </div>
+                <button type="submit" class="btn">Get Result</button>
+            </form>
+            
+            <div class="preloader" id="preloader">
+                <div class="spinner"></div>
+            </div>
+        </section>
+        
+        <!-- Result Display -->
+        <section class="result-container" id="resultContainer">
+            <div class="result-header">
+                <h3 class="result-title">Internal Assessment Result</h3>
+                <p class="result-subtitle">Jaya Engineering College - Academic Year 2023-2024</p>
+            </div>
+            
+            <div class="student-info">
+                <div>
+                    <div class="student-name" id="studentName">John Doe</div>
+                    <div class="student-detail">Roll Number: <span id="displayRoll">12345</span></div>
+                    <div class="student-detail">Date of Birth: <span id="displayDob">01/01/2000</span></div>
+                </div>
+                <div>
+                    <div class="student-detail">Department: <span id="displayDept">Computer Science</span></div>
+                    <div class="student-detail">Semester: <span id="displaySem">V</span></div>
+                    <div class="student-detail">Academic Year: <span>2023-2024</span></div>
+                </div>
+            </div>
+            
+            <table class="marks-table">
+                <thead>
+                    <tr>
+                        <th>Subject Code</th>
+                        <th>Subject Name</th>
+                        <th>Marks Obtained</th>
+                        <th>Max Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="marksTable">
+                    <!-- Marks will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+            
+            <div class="result-summary">
+                <div class="total-marks">Total Marks: <span id="totalMarks">450</span>/600</div>
+                <div class="result-status pass" id="resultStatus">Pass</div>
+            </div>
+        </section>
+        
+        <!-- Anna University Section -->
+        <section class="anna-section">
+            <h2 class="section-title">Anna University Results</h2>
+            <p>Check your official Anna University semester examination results through the link below:</p>
+            
+            <a href="https://coe.annauniv.edu/home/" class="anna-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Visit Anna University Result Portal
+            </a>
+            
+            <div class="anna-info">
+                <p><i class="fas fa-info-circle"></i> Official semester results are published on the Anna University portal. For any discrepancies, contact the examination cell within 7 days of result publication.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-btn" id="chatbotBtn">
+            <i class="fas fa-robot"></i>
+        </div>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-title">JEC Result Assistant</div>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    Hello! I'm your JEC result assistant. How can I help you today?
+                </div>
+            </div>
+            
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your question...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="/result.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="5SH11WcDdxlxtMWWlDKZp1Kr6zGj7mRaohw52Qhl_Xs" />
+    <title>IT Department | Jaya Engineering College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhN9hNNRvLJpbnZpr6WnBGXLPfOCn3ZVYOgWUer7UepC2BIxLIy4kMkP2NEzfiqGpsQtk&usqp=CAU" alt="College Logo">
+                <span class="logo-text"> IT-Department</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="/syllabus.html">Syllabus</a>
+                <a href="/time-table.html">Timetable</a>
+                <a href="/course.html">Course</a>
+                <a href="/Faculty.html">Faculty</a>
+                <a href="/result.html">Result</a>
+                <a href="/Student Hub.html">Student Hub</a>
+                <a href="/lab.html">Labs</a>
+                <a href="/notics&circular.html">Notices</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Coding background elements -->
+        <div class="code-bg">
+            <pre style="color: #3498db; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.5; margin: 0; padding: 20px;">
+<span style="color: #e74c3c;">// Welcome to Jaya IT Department</span>
+<span style="color: #2ecc71;">class</span> <span style="color: #3498db;">Student</span> {
+    <span style="color: #2ecc71;">constructor</span>(name, year) {
+        <span style="color: #2ecc71;">this</span>.name = name;
+        <span style="color: #2ecc71;">this</span>.year = year;
+        <span style="color: #2ecc71;">this</span>.skills = [];
+    }
+
+    <span style="color: #9b59b6;">addSkill</span>(skill) {
+        <span style="color: #2ecc71;">this</span>.skills.push(skill);
+        <span style="color: #e74c3c;">return</span> <span style="color: #2ecc71;">this</span>;
+    }
+
+    <span style="color: #9b59b6;">graduate</span>() {
+        <span style="color: #e74c3c;">return</span> <span style="color: #f39c12;">`Congratulations ${this.name}!`</span>;
+    }
+}
+
+<span style="color: #2ecc71;">const</span> itStudent = <span style="color: #e74c3c;">new</span> <span style="color: #3498db;">Student</span>(<span style="color: #f39c12;">'Future Engineer'</span>, 2023);
+
+itStudent
+    .addSkill(<span style="color: #f39c12;">'JavaScript'</span>)
+    .addSkill(<span style="color: #f39c12;">'Python'</span>)
+    .addSkill(<span style="color: #f39c12;">'Machine Learning'</span>);
+
+console.log(itStudent.graduate());
+            </pre>
+        </div>
+        
+        <h1>Information Technology Department</h1>
+        <p>Empowering the future through cutting-edge technology and innovative education since 1995.</p>
+        <button class="cta-button" id="exploreBtn">Explore More</button>
+        
+        <!-- Floating IT icons -->
+        <i class="fas fa-code floating" style="position: absolute; top: 20%; left: 10%; font-size: 2rem; color: rgba(255,255,255,0.3);"></i>
+        <i class="fas fa-server floating" style="position: absolute; top: 70%; left: 15%; font-size: 2.5rem; color: rgba(255,255,255,0.4); animation-delay: 0.5s;"></i>
+        <i class="fas fa-robot floating" style="position: absolute; top: 30%; right: 10%; font-size: 3rem; color: rgba(255,255,255,0.2); animation-delay: 0.7s;"></i>
+        <i class="fas fa-network-wired floating" style="position: absolute; bottom: 20%; right: 15%; font-size: 2rem; color: rgba(255,255,255,0.3); animation-delay: 0.3s;"></i>
+    </section>
+
+    <!-- Events Banner -->
+    <div class="events-banner">
+        <div class="events-container">
+            <div class="events-title">
+                <i class="fas fa-calendar-alt"></i>
+                Department Events
+            </div>
+            <div class="events-marquee">
+                <div class="events-marquee-content">
+                    <span class="event-item"><i class="fas fa-microphone"></i> Tech Talk: AI in Healthcare - Oct 25, 3PM @ Seminar Hall</span>
+                    <span class="event-item"><i class="fas fa-laptop-code"></i> Hackathon 2023 - Nov 10-12 @ IT Block</span>
+                    <span class="event-item"><i class="fas fa-graduation-cap"></i> Alumni Meet - Dec 5, 10AM @ College Auditorium</span>
+                    <span class="event-item"><i class="fas fa-flask"></i> Project Expo - Jan 15, 2024 @ Department Labs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Syllabus Section -->
+    <section class="section" id="syllabus">
+        <div class="section-title">
+            <h2>📚 Syllabus & Curriculum</h2>
+        </div>
+        <div class="syllabus-grid">
+            <div class="syllabus-card">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="First Year Syllabus">
+                <div class="syllabus-content">
+                    <h3>First Year Syllabus</h3>
+                    <p>Comprehensive curriculum covering foundational subjects for all engineering branches.</p>
+                    <a href="/syllabus.html" class="download-btn">Download PDF</a>
+                </div>
+            </div>
+            <div class="syllabus-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Second Year Syllabus">
+                <div class="syllabus-content">
+                    <h3>Second Year Syllabus</h3>
+                    <p>Core IT subjects including Data Structures, Algorithms, and Computer Networks.</p>
+                    <a href="/syllabus.html" class="download-btn">Download PDF</a>
+                </div>
+            </div>
+            <div class="syllabus-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Third Year Syllabus">
+                <div class="syllabus-content">
+                    <h3>Third Year Syllabus</h3>
+                    <p>Advanced topics like Machine Learning, Cloud Computing, and Cybersecurity.</p>
+                    <a href="/syllabus.html" class="download-btn">Download PDF</a>
+                </div>
+            </div>
+            <div class="syllabus-card">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Final Year Syllabus">
+                <div class="syllabus-content">
+                    <h3>Final Year Syllabus</h3>
+                    <p>Specializations and project work with industry-relevant technologies.</p>
+                    <a href="/syllabus.html" class="download-btn">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timetable Section -->
+    <section class="section" id="timetable">
+        <div class="section-title">
+            <h2>🕒 Timetable & Lab Schedule</h2>
+        </div>
+        <div class="timetable-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day/Time</th>
+                        <th>9:00-10:00</th>
+                        <th>10:00-11:00</th>
+                        <th>11:00-12:00</th>
+                        <th>12:00-1:00</th>
+                        <th>1:00-2:00</th>
+                        <th>2:00-3:00</th>
+                        <th>3:00-4:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Data Structures</td>
+                        <td>Algorithms</td>
+                        <td>DBMS</td>
+                        <td rowspan="5">Lunch</td>
+                        <td colspan="2">Web Tech Lab</td>
+                        <td>Library</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Computer Networks</td>
+                        <td>OS</td>
+                        <td>AI</td>
+                        <td colspan="3">Project Work</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Cloud Computing</td>
+                        <td>Cyber Security</td>
+                        <td>ML</td>
+                        <td colspan="2">Networks Lab</td>
+                        <td>Seminar</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Software Engg</td>
+                        <td>IoT</td>
+                        <td>Big Data</td>
+                        <td colspan="3">Industrial Visit</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Compiler Design</td>
+                        <td>DAA</td>
+                        <td>Elective</td>
+                        <td colspan="2">Programming Lab</td>
+                        <td>Sports</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="section" id="faculty">
+        <div class="section-title">
+            <h2>👨‍🏫 Faculty Directory</h2>
+        </div>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Rajesh Kumar" class="faculty-img">
+                <div class="faculty-info">
+                    <h3>Dr. Rajesh Kumar</h3>
+                    <p>Professor & HOD</p>
+                    <p>PhD in Computer Science</p>
+                    <a href="mailto:rajesh.kumar@jaya.edu" class="faculty-email">rajesh.kumar@jaya.edu</a>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Priya Sharma" class="faculty-img">
+                <div class="faculty-info">
+                    <h3>Dr. Priya Sharma</h3>
+                    <p>Associate Professor</p>
+                    <p>PhD in Artificial Intelligence</p>
+                    <a href="mailto:priya.sharma@jaya.edu" class="faculty-email">priya.sharma@jaya.edu</a>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Prof. Arun Patel" class="faculty-img">
+                <div class="faculty-info">
+                    <h3>Prof. Arun Patel</h3>
+                    <p>Assistant Professor</p>
+                    <p>M.Tech in Data Science</p>
+                    <a href="mailto:arun.patel@jaya.edu" class="faculty-email">arun.patel@jaya.edu</a>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Meena Iyer" class="faculty-img">
+                <div class="faculty-info">
+                    <h3>Dr. Meena Iyer</h3>
+                    <p>Associate Professor</p>
+                    <p>PhD in Cybersecurity</p>
+                    <a href="mailto:meena.iyer@jaya.edu" class="faculty-email">meena.iyer@jaya.edu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-title">
+            <h2>💡 Project Ideas & Past Projects</h2>
+        </div>
+        <div class="projects-tabs">
+            <button class="tab-btn active" data-tab="ideas">Project Ideas</button>
+            <button class="tab-btn" data-tab="past">Past Projects</button>
+            <button class="tab-btn" data-tab="ongoing">Ongoing Projects</button>
+        </div>
+        <div class="tab-content active" id="ideas">
+            <div class="project-card">
+                <h3>AI-Based Smart Attendance System</h3>
+                <div class="meta">Difficulty: Intermediate | Duration: 3 months</div>
+                <p>Develop a facial recognition system that automatically marks attendance using computer vision and machine learning algorithms.</p>
+            </div>
+            <div class="project-card">
+                <h3>Blockchain-Based Certificate Verification</h3>
+                <div class="meta">Difficulty: Advanced | Duration: 6 months</div>
+                <p>Create a decentralized application for issuing and verifying academic certificates using blockchain technology.</p>
+            </div>
+            <div class="project-card">
+                <h3>IoT-Based Smart Classroom</h3>
+                <div class="meta">Difficulty: Beginner | Duration: 2 months</div>
+                <p>Design a system to monitor and control classroom environment (light, temperature) using IoT sensors.</p>
+            </div>
+        </div>
+        <div class="tab-content" id="past">
+            <div class="project-card">
+                <h3>Virtual Lab Platform (2022)</h3>
+                <div class="meta">Team: 4 students | Guide: Dr. Rajesh Kumar</div>
+                <p>A web-based platform allowing students to perform computer science experiments remotely with real-time results.</p>
+            </div>
+            <div class="project-card">
+                <h3>College Bus Tracking System (2021)</h3>
+                <div class="meta">Team: 3 students | Guide: Prof. Arun Patel</div>
+                <p>Mobile app showing real-time location of college buses with estimated arrival times using GPS.</p>
+            </div>
+        </div>
+        <div class="tab-content" id="ongoing">
+            <div class="project-card">
+                <h3>AI-Based Career Guidance System</h3>
+                <div class="meta">Team: 5 students | Expected Completion: Dec 2023</div>
+                <p>Machine learning system that analyzes student skills and suggests suitable career paths.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Section -->
+    <section class="section" id="labs">
+        <div class="section-title">
+            <h2>🛠️ Lab Infrastructure</h2>
+        </div>
+        <div class="lab-container">
+            <div class="lab-card">
+                <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Programming Lab">
+                <div class="lab-info">
+                    <h3>Programming Lab</h3>
+                    <p>Equipped with 60 high-end systems with latest software for programming practice and development.</p>
+                    <ul class="equipment-list">
+                        <li>Intel i7 Processors</li>
+                        <li>16GB RAM</li>
+                        <li>Dual Monitors</li>
+                        <li>All Programming IDEs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lab-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Networking Lab">
+                <div class="lab-info">
+                    <h3>Networking Lab</h3>
+                    <p>Hands-on experience with networking equipment and simulation tools.</p>
+                    <ul class="equipment-list">
+                        <li>Cisco Routers & Switches</li>
+                        <li>Network Simulators</li>
+                        <li>Packet Tracer</li>
+                        <li>Network Monitoring Tools</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lab-card">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2046&q=80" alt="AI & Robotics Lab">
+                <div class="lab-info">
+                    <h3>AI & Robotics Lab</h3>
+                    <p>State-of-the-art facility for artificial intelligence and robotics research.</p>
+                    <ul class="equipment-list">
+                        <li>NVIDIA DGX Systems</li>
+                        <li>Robotic Arms</li>
+                        <li>3D Printers</li>
+                        <li>VR Equipment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notices Section -->
+    <section class="section" id="notices">
+        <div class="section-title">
+            <h2>🧾 Notices & Circulars</h2>
+        </div>
+        <div class="notice-board">
+            <div class="notice-item">
+                <h3>Mid-Term Examination Schedule</h3>
+                <div class="notice-date">October 15, 2023</div>
+                <p>The mid-term examinations for odd semester will be conducted from November 10th to November 20th. Detailed timetable will be shared soon.</p>
+            </div>
+            <div class="notice-item">
+                <h3>Industrial Visit to Tech Park</h3>
+                <div class="notice-date">October 10, 2023</div>
+                <p>Third year students are invited for an industrial visit to Tech Park Chennai on October 25th. Registration deadline is October 20th.</p>
+            </div>
+            <div class="notice-item">
+                <h3>Hackathon 2023 Registrations Open</h3>
+                <div class="notice-date">October 5, 2023</div>
+                <p>Department is organizing a 48-hour hackathon on November 10-12. Themes include AI, Blockchain and IoT. Register by October 30th.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="/syllabus.html">Syllabus</a>
+                <a href="/time-table.html">Timetable</a>
+                <a href="#faculty">Faculty</a>
+                <a href="#labs">Labs</a>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> IT Department, Jaya Engineering College, Chennai</p>
+                <p><i class="fas fa-phone"></i> +91 44 1234 5678</p>
+                <p><i class="fas fa-envelope"></i> itdept@jaya.edu</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Important Links</h3>
+                <a href="https://jec.ac.in" target="_blank">College Website</a>
+                <a href="https://www.annauniv.edu/">University Portal</a>
+                <a href="#https://jec.ac.in/academic-calendar-2/">Academic Calendar</a>
+                <a href="https://jec.ac.in/placement-cell/">Placement Cell</a>
+                <a href="https://jec.ac.in/library/">Library</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Jaya Engineering College - IT Department. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+   <script src="/home.js"></script>
+   <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDGWWD8hOoy_C8c5D312uM7gFLCmwrt850",
+      authDomain: "jaya-it-dept-42fe1.firebaseapp.com",
+      projectId: "jaya-it-dept-42fe1",
+      storageBucket: "jaya-it-dept-42fe1.firebasestorage.app",
+      messagingSenderId: "987990501512",
+      appId: "1:987990501512:web:99396647ddf49ebc2bd73d",
+      measurementId: "G-V49Y4QFHFK"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  </script>
+      <script src="/firebase-messaging-sw.js"></script>
+
+</body>
+</html>

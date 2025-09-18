@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Department Labs - Jaya Engineering College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container logo-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhN9hNNRvLJpbnZpr6WnBGXLPfOCn3ZVYOgWUer7UepC2BIxLIy4kMkP2NEzfiqGpsQtk&usqp=CAU" alt="College Logo">
+                <div class="logo-text">
+                    <h1>Jaya Engineering College</h1>
+                    <p>Department of Information Technology</p>
+                </div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <nav id="nav-menu">
+              <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Faculty.html">Faculty</a></li>
+                <li><a href="/lab.html" class="active">Labs</a></li>
+                <li><a href="/syllabus.html">Courses</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>IT Department Laboratories</h2>
+            <p>State-of-the-art computing facilities with modern equipment and software for practical learning</p>
+        </div>
+    </section>
+    
+    <!-- Lab Manuals Section -->
+    <section class="lab-manuals">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lab Manuals</h2>
+            </div>
+            
+            <!-- First Year -->
+            <div class="year-container animate-year" style="animation-delay: 0.1s">
+                <div class="year-header">
+                    <h3>First Year</h3>
+                    <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="semester-cards">
+                    <!-- Semester I -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.2s">
+                        <div class="semester-card-header">
+                            <h4>Semester I</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.3s">
+                                    <div class="lab-item">
+                                        <span>Programming Basics Lab</span>
+                                        <a href="manuals/first_year/sem1/programming_basics.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.4s">
+                                    <div class="lab-item">
+                                        <span>Computer Fundamentals Lab</span>
+                                        <a href="manuals/first_year/sem1/computer_fundamentals.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.5s">
+                                    <div class="lab-item">
+                                        <span>Mathematics Lab I</span>
+                                        <a href="manuals/first_year/sem1/mathematics.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/first_year/sem1/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester I Manuals
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester II -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.3s">
+                        <div class="semester-card-header">
+                            <h4>Semester II</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.4s">
+                                    <div class="lab-item">
+                                        <span>Data Structures Lab</span>
+                                        <a href="manuals/first_year/sem2/data_structures.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.5s">
+                                    <div class="lab-item">
+                                        <span>Communication Skills Lab</span>
+                                        <a href="manuals/first_year/sem2/communication_skills.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.6s">
+                                    <div class="lab-item">
+                                        <span>Mathematics Lab II</span>
+                                        <a href="manuals/first_year/sem2/mathematics.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/first_year/sem2/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester II Manuals
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second Year -->
+            <div class="year-container animate-year" style="animation-delay: 0.2s">
+                <div class="year-header">
+                    <h3>Second Year</h3>
+                    <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="semester-cards">
+                    <!-- Semester III -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.3s">
+                        <div class="semester-card-header">
+                            <h4>Semester III</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.4s">
+                                    <div class="lab-item">
+                                        <span>Database Systems Lab</span>
+                                        <a href="manuals/second_year/sem3/database_systems.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.5s">
+                                    <div class="lab-item">
+                                        <span>Object-Oriented Programming Lab</span>
+                                        <a href="manuals/second_year/sem3/oop.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.6s">
+                                    <div class="lab-item">
+                                        <span>Digital Systems Lab</span>
+                                        <a href="manuals/second_year/sem3/digital_systems.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/second_year/sem3/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester III Manuals
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester IV -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.4s">
+                        <div class="semester-card-header">
+                            <h4>Semester IV</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.5s">
+                                    <div class="lab-item">
+                                        <span>Web Technology Lab</span>
+                                        <a href="manuals/second_year/sem4/web_technology.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.6s">
+                                    <div class="lab-item">
+                                        <span>Operating Systems Lab</span>
+                                        <a href="manuals/second_year/sem4/os.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.7s">
+                                    <div class="lab-item">
+                                        <span>Computer Networks Lab</span>
+                                        <a href="manuals/second_year/sem4/networks.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/second_year/sem4/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester IV Manuals
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Third Year -->
+            <div class="year-container animate-year" style="animation-delay: 0.3s">
+                <div class="year-header">
+                    <h3>Third Year</h3>
+                    <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="semester-cards">
+                    <!-- Semester V -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.4s">
+                        <div class="semester-card-header">
+                            <h4>Semester V</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.5s">
+                                    <div class="lab-item">
+                                        <span>Software Engineering Lab</span>
+                                        <a href="manuals/third_year/sem5/software_engg.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.6s">
+                                    <div class="lab-item">
+                                        <span>Java Programming Lab</span>
+                                        <a href="manuals/third_year/sem5/java.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.7s">
+                                    <div class="lab-item">
+                                        <span>Microprocessor Lab</span>
+                                        <a href="manuals/third_year/sem5/microprocessor.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/third_year/sem5/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester V Manuals
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester VI -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.5s">
+                        <div class="semester-card-header">
+                            <h4>Semester VI</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.6s">
+                                    <div class="lab-item">
+                                        <span>Compiler Design Lab</span>
+                                        <a href="manuals/third_year/sem6/compiler_design.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.7s">
+                                    <div class="lab-item">
+                                        <span>Data Mining Lab</span>
+                                        <a href="manuals/third_year/sem6/data_mining.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.8s">
+                                    <div class="lab-item">
+                                        <span>Mobile Computing Lab</span>
+                                        <a href="manuals/third_year/sem6/mobile_computing.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/third_year/sem6/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester VI Manuals
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fourth Year -->
+            <div class="year-container animate-year" style="animation-delay: 0.4s">
+                <div class="year-header">
+                    <h3>Fourth Year</h3>
+                    <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="semester-cards">
+                    <!-- Semester VII -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.5s">
+                        <div class="semester-card-header">
+                            <h4>Semester VII</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.6s">
+                                    <div class="lab-item">
+                                        <span>Artificial Intelligence Lab</span>
+                                        <a href="manuals/fourth_year/sem7/ai.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.7s">
+                                    <div class="lab-item">
+                                        <span>Cloud Computing Lab</span>
+                                        <a href="manuals/fourth_year/sem7/cloud.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.8s">
+                                    <div class="lab-item">
+                                        <span>Information Security Lab</span>
+                                        <a href="manuals/fourth_year/sem7/info_security.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/fourth_year/sem7/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester VII Manuals
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester VIII -->
+                    <div class="semester-card animate-semester" style="animation-delay: 0.6s">
+                        <div class="semester-card-header">
+                            <h4>Semester VIII</h4>
+                        </div>
+                        <div class="semester-card-body">
+                            <ul class="lab-list">
+                                <li class="animate-item" style="animation-delay: 0.7s">
+                                    <div class="lab-item">
+                                        <span>Project Work Lab</span>
+                                        <a href="manuals/fourth_year/sem8/project.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.8s">
+                                    <div class="lab-item">
+                                        <span>Big Data Lab</span>
+                                        <a href="manuals/fourth_year/sem8/big_data.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="animate-item" style="animation-delay: 0.9s">
+                                    <div class="lab-item">
+                                        <span>IoT Lab</span>
+                                        <a href="manuals/fourth_year/sem8/iot.pdf" class="download-btn" download>
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="manuals/fourth_year/sem8/all_manuals.zip" class="semester-download-all" download>
+                                <i class="fas fa-file-archive"></i> Download All Semester VIII Manuals
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Departments</h3>
+                    <ul>
+                        <li><a href="#">Information Technology</a></li>
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                        <li><a href="#">Civil</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jaya Nagar, Chennai - 602024</li>
+                        <li><i class="fas fa-phone"></i> +91 44 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> itdept@jayaengg.edu.in</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Jaya Engineering College - Department of Information Technology. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/lab.js"></script>
+</body>
+</html>

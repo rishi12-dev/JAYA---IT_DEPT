@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Engineering College - Programming Courses</title>
+    <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhN9hNNRvLJpbnZpr6WnBGXLPfOCn3ZVYOgWUer7UepC2BIxLIy4kMkP2NEzfiqGpsQtk&usqp=CAU/50x50" alt="Jaya Engineering College Logo">
+                <div>
+                    <h1>Jaya Engineering College</h1>
+                    <span>Department of Information Technology</span>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#typing">Typing Practice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Learn Programming with JEC</h2>
+            <p>Access free programming courses, handwritten notes, coding games, and practice tools to enhance your skills as a computer science student.</p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section" id="courses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Programming Courses</h2>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <!-- <button class="filter-btn" data-filter="free">Free Courses</button> -->
+                <!-- <button class="filter-btn" data-filter="paid">Paid Courses</button> -->
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card" data-category="free beginner">
+                    <div class="course-img">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/4/YT/WH/NR/151017895/python-course.jpg" alt="Python Programming">
+                    </div>
+                    <div class="course-info">
+                        <h3>Python for Beginners</h3>
+                        <p>Learn Python programming from scratch with hands-on exercises and projects.</p>
+                        <div class="course-meta">
+                            <span class="price free">Free</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/python-fundamentals-for-beginners" class="btn-small">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card" data-category="paid advanced">
+                    <div class="course-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eH2V8OKWHpH-1U2KbS0KSfPGG1ESHjx_FA&s" alt="Web Development">
+                    </div>
+                    <div class="course-info">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Master HTML, CSS, JavaScript, Node.js, and React to build modern web applications.</p>
+                        <div class="course-meta">
+                            <span class="price free">₹Free</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/become-full-stack-developer" class="btn-small">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card" data-category="free beginner">
+                    <div class="course-img">
+                        <img src="https://i.ytimg.com/vi/H-Ig9W8DKFc/maxresdefault.jpg" alt="C Programming">
+                    </div>
+                    <div class="course-info">
+                        <h3>C Programming Fundamentals</h3>
+                        <p>Learn the basics of C programming language with practical examples.</p>
+                        <div class="course-meta">
+                            <span class="price free">Free</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/c-for-beginners1" class="btn-small">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="course-card" data-category="paid advanced">
+                    <div class="course-img">
+                        <img src="https://cdn.hackr.io/uploads/posts/large/1627884166eKgVi1YLix.png" alt="Data Structures">
+                    </div>
+                    <div class="course-info">
+                        <h3>Data Structures & Algorithms</h3>
+                        <p>Master essential data structures and algorithms for coding interviews.</p>
+                        <div class="course-meta">
+                            <span class="price free">₹Free</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/data-structures-in-c" class="btn-small">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- Course 5 -->
+                <div class="course-card" data-category="free beginner">
+                    <div class="course-img">
+                        <img src="https://www.vinsys.com/_next/image?url=https%3A%2F%2Fvinsys.com%2Fstatic%2Fmedia%2Fuploads%2F2022%2F01%2FJava-Programming-Training-For-Beginners.jpg&w=1200&q=75 alt="Java Programming">
+                    </div>
+                    <div class="course-info">
+                        <h3>Java Programming Basics</h3>
+                        <p>Learn Java programming concepts with object-oriented approach.</p>
+                        <div class="course-meta">
+                            <span class="price free">Free</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/java-programming" class="btn-small">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- Course 6 -->
+                <div class="course-card" data-category="paid advanced">
+                    <div class="course-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIcBbGo5FZUXE5xukkNMiu_lv4L5DOywDlKA&s" alt="Machine Learning">
+                    </div>
+                    <div class="course-info">
+                        <h3>Machine Learning with Python</h3>
+                        <p>Introduction to machine learning algorithms and their implementation.</p>
+                        <div class="course-meta">
+                            <span class="price free">₹Free</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/python-for-machine-learning" class="btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="section resources" id="resources">
+        <div class="container">
+            <div class="section-title">
+                <h2>Handwritten Resources</h2>
+                <p>Free handwritten notes for various programming languages and concepts</p>
+            </div>
+            
+            <div class="resource-category">
+                <h3>Python Resources</h3>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Python Basics Notes</h4>
+                            <p>Complete beginner's guide to Python programming</p>
+                        </div>
+                        <button class="download-btn" data-resource="python-basics">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>OOP in Python</h4>
+                            <p>Object-Oriented Programming concepts in Python</p>
+                        </div>
+                        <button class="download-btn" data-resource="python-oop">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Python for Data Science</h4>
+                            <p>Pandas, NumPy, and Matplotlib notes</p>
+                        </div>
+                        <button class="download-btn" data-resource="python-datascience">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Django Framework Notes</h4>
+                            <p>Web development with Django framework</p>
+                        </div>
+                        <button class="download-btn" data-resource="python-django">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-category">
+                <h3>Java Resources</h3>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Java Fundamentals</h4>
+                            <p>Core Java concepts and syntax</p>
+                        </div>
+                        <button class="download-btn" data-resource="java-fundamentals">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Advanced Java Concepts</h4>
+                            <p>Multithreading, Collections, and more</p>
+                        </div>
+                        <button class="download-btn" data-resource="java-advanced">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Spring Framework Notes</h4>
+                            <p>Spring Boot and Spring MVC concepts</p>
+                        </div>
+                        <button class="download-btn" data-resource="java-spring">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Java Collections</h4>
+                            <p>Detailed notes on Java Collection Framework</p>
+                        </div>
+                        <button class="download-btn" data-resource="java-collections">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-category">
+                <h3>Web Development</h3>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>HTML & CSS Cheat Sheet</h4>
+                            <p>Quick reference for web development</p>
+                        </div>
+                        <button class="download-btn" data-resource="web-htmlcss">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>JavaScript Notes</h4>
+                            <p>Modern JavaScript concepts and ES6+ features</p>
+                        </div>
+                        <button class="download-btn" data-resource="web-javascript">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>React.js Concepts</h4>
+                            <p>Complete guide to React.js framework</p>
+                        </div>
+                        <button class="download-btn" data-resource="web-react">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Node.js Basics</h4>
+                            <p>Server-side JavaScript with Node.js</p>
+                        </div>
+                        <button class="download-btn" data-resource="web-nodejs">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-category">
+                <h3>Data Structures</h3>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Arrays & Linked Lists</h4>
+                            <p>Detailed notes on linear data structures</p>
+                        </div>
+                        <button class="download-btn" data-resource="ds-arrays">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Trees & Graphs</h4>
+                            <p>Non-linear data structures explained</p>
+                        </div>
+                        <button class="download-btn" data-resource="ds-trees">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Sorting Algorithms</h4>
+                            <p>Bubble, Quick, Merge, and other sorting techniques</p>
+                        </div>
+                        <button class="download-btn" data-resource="ds-sorting">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <h4>Dynamic Programming</h4>
+                            <p>DP concepts with problem-solving approaches</p>
+                        </div>
+                        <button class="download-btn" data-resource="ds-dp">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="section" id="games">
+        <div class="container">
+            <div class="section-title">
+                <h2>Coding Games</h2>
+                <p>Learn programming concepts through interactive games</p>
+            </div>
+            
+            <div class="games-grid">
+                <!-- Game 1 -->
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="https://customer-burj9xtby325x4f1.cloudflarestream.com/cf4738b607808cfa92dca7ab377e60fb/thumbnails/thumbnail.jpg?time=2s400x225" alt="Code Combat">
+                    </div>
+                    <div class="game-info">
+                        <h3>Code Combat</h3>
+                        <p>Learn Python and JavaScript through a fantasy game where you control heroes with code.</p>
+                        <a href="https://codecombat.com/" target="_blank" class="btn-small">Play Now</a>
+                    </div>
+                </div>
+                
+                <!-- Game 2 -->
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDHbPg1baN-wG22FXavBH9vanUGwMlnoFsaQ&s/400x225" alt="Screeps">
+                    </div>
+                    <div class="game-info">
+                        <h3>Screeps</h3>
+                        <p>An MMO strategy sandbox game for programmers, where you control units by writing JavaScript.</p>
+                        <a href="https://screeps.com/" target="_blank" class="btn-small">Play Now</a>
+                    </div>
+                </div>
+                
+                <!-- Game 3 -->
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="https://thecodebytes.com/wp-content/webpc-passthru.php?src=https://thecodebytes.com/wp-content/uploads/2022/08/checkio-logo.png&nocache=1/400x225" alt="CheckiO">
+                    </div>
+                    <div class="game-info">
+                        <h3>CheckiO</h3>
+                        <p>Improve your coding skills by solving challenges and competing with other developers.</p>
+                        <a href="https://checkio.org/" target="_blank" class="btn-small">Play Now</a>
+                    </div>
+                </div>
+                
+                <!-- Game 4 -->
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="https://miro.medium.com/v2/resize:fit:1200/1*MBnlYS10H9B02GvAKJ-XFw.png" alt="Codewars">
+                    </div>
+                    <div class="game-info">
+                        <h3>Codewars</h3>
+                        <p>Train on programming challenges known as "kata" and improve your problem-solving skills.</p>
+                        <a href="https://www.codewars.com/" target="_blank" class="btn-small">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typing Practice Section -->
+    <section class="section" id="typing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Typing Practice</h2>
+                <p>Improve your typing speed and accuracy with coding-specific exercises</p>
+            </div>
+            
+            <div class="typing-container">
+                <h3>Practice Typing with Code</h3>
+                <p>Enhance your typing speed and accuracy with our recommended typing practice platform. Perfect for programmers who want to improve their coding speed.</p>
+                <a href="https://www.keybr.com/" target="_blank" class="typing-link">Start Typing Practice</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Jaya Engineering College</h3>
+                    <p>Department of Information Technology</p>
+                    <p>Providing quality education in programming and Information Technology.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#games">Coding Games</a></li>
+                        <li><a href="#typing">Typing Practice</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Thailavaram, Chennai</li>
+                        <li><i class="fas fa-phone"></i> +91 44 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> itdept@jayaengg.edu.in</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Jaya Engineering College - Information Technology Department. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Confirmation Modal -->
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <h3>Download Resource</h3>
+            <p id="modalMessage">Are you sure you want to download this resource?</p>
+            <div class="modal-buttons">
+                <button class="modal-btn confirm" id="confirmDownload">Download</button>
+                <button class="modal-btn cancel" id="cancelDownload">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+  <script src="/course.js"></script>
+</body>
+</html>

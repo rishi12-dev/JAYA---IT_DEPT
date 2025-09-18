@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices & Circulars - Jaya Engineering College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="notics&circular.css">
+   <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Notices & Circulars</h1>
+            <p>Jaya Engineering College - Information Technology Department</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Admin Login Section (Visible to everyone) -->
+        <div class="login-section">
+            <button id="adminLoginBtn" class="login-btn">
+                <i class="fas fa-lock"></i> Admin Login
+            </button>
+        </div>
+        
+        <!-- Admin Panel (Hidden by default) -->
+        <div class="admin-panel" id="adminPanel">
+            <h2>Admin Panel</h2>
+            <form id="noticeForm">
+                <div class="form-group">
+                    <label for="noticeType">Type</label>
+                    <select id="noticeType" required>
+                        <option value="">Select type</option>
+                        <option value="notice">Notice</option>
+                        <option value="circular">Circular</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="noticeTitle">Title</label>
+                    <input type="text" id="noticeTitle" placeholder="Enter notice title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="noticeContent">Content</label>
+                    <textarea id="noticeContent" placeholder="Enter notice content" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="noticeDepartment">Department</label>
+                    <select id="noticeDepartment" required>
+                        <option value="">Select department</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="CSE">Computer Science</option>
+                        <option value="ECE">Electronics</option>
+                        <option value="EEE">Electrical</option>
+                        <option value="MECH">Mechanical</option>
+                        <option value="ALL">All Departments</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="noticeDate">Date</label>
+                    <input type="date" id="noticeDate" required>
+                </div>
+                
+                <button type="submit">Publish Notice</button>
+                <button type="button" id="logoutBtn" class="btn-danger">Logout</button>
+            </form>
+        </div>
+        
+        <!-- Notices Display Section -->
+        <div class="notices-container">
+            <h2>Latest Notices & Circulars</h2>
+            
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search notices...">
+                </div>
+                
+                <div class="filter-options">
+                    <select id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="notice">Notices</option>
+                        <option value="circular">Circulars</option>
+                    </select>
+                    
+                    <!-- <select id="departmentFilter">
+                        <option value="">All Departments</option>
+                        <option value="IT">IT</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH">MECH</option>
+                    </select> -->
+                </div>
+            </div>
+            
+            <div id="noticesList">
+                <!-- Notices will be dynamically inserted here -->
+                <div class="no-notices">
+                    <i class="fas fa-info-circle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <p>No notices available at the moment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Notification Permission Prompt (hidden by default) -->
+<div id="notificationPrompt" class="notification-prompt">
+    <p>Get instant updates on your mobile device!</p>
+    <button id="enableNotificationsBtn">Enable Notifications</button>
+    <button id="laterBtn">Maybe Later</button>
+</div>
+
+<!-- Loading element for notices -->
+<div id="loadingIndicator" class="loading-indicator">
+    <i class="fas fa-spinner fa-spin"></i> Loading notices...
+</div>
+    <script src="notics&circular.js"></script>
+    <script src="/firebase-messaging-sw.js"></script>
+</body>
+</html>

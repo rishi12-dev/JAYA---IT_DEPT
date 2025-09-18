@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Department Timetable - Jaya Engineering College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="time-table.css">
+    <link rel="shortcut icon" href="https://jec.ac.in/wp-content/themes/Jayacollege_2017/images/logo_fav.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhN9hNNRvLJpbnZpr6WnBGXLPfOCn3ZVYOgWUer7UepC2BIxLIy4kMkP2NEzfiqGpsQtk&usqp=CAU" alt="College Logo">                <span class="logo-text">Jaya IT Department</span>
+            </div>
+            
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<div class="nav-links" id="nav-links">
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="/syllabus.html" class="active"><i class="fas fa-book"></i> Syllabus</a>
+  <a href="/time-table.html"><i class="fas fa-clock"></i> Timetable</a>
+  <a href="/Faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a>
+</div>
+
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>IT Department Timetable</h1>
+            <p>Academic Year 2023-2024 | College Hours: 8:30 AM - 3:30 PM</p>
+        </div>
+
+        <div class="year-selector">
+            <button class="year-btn active" data-year="1">1st Year</button>
+            <button class="year-btn" data-year="2">2nd Year</button>
+            <button class="year-btn" data-year="3">3rd Year</button>
+            <button class="year-btn" data-year="4">4th Year</button>
+        </div>
+
+        <!-- 1st Year Timetable -->
+        <div class="timetable-container show" id="year1-timetable">
+            
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <tr>
+                            <td class="time-col">8:30 - 9:20</td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">9:20 - 10:10</td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:10 - 11:00</td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics Lab</div>
+                                <div class="teacher">Lab 1</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">Environmental Science</div>
+                                <div class="teacher">Dr. S. Gupta</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:00 - 11:15</td>
+                            <td class="short-break-cell" colspan="6">SHORT BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:15 - 12:05</td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics Lab</div>
+                                <div class="teacher">Lab 1</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:05 - 12:45</td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry Lab</div>
+                                <div class="teacher">Lab 2</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Library</div>
+                                <div class="teacher">Self Study</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:45 - 1:15</td>
+                            <td class="lunch-cell" colspan="6">LUNCH BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">1:15 - 2:05</td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry Lab</div>
+                                <div class="teacher">Lab 2</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Library</div>
+                                <div class="teacher">Self Study</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">2:05 - 2:55</td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">2:55 - 3:30</td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <button id="downloadBtn" class="download-btn">
+                <span class="download-icon"></span>
+                <span class="download-text">Download Timetable</span>
+                <div class="download-progress"></div>
+            </button>
+        </div>
+
+        <!-- 2nd Year Timetable -->
+        <div class="timetable-container" id="year2-timetable">
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <tr>
+                            <td class="time-col">8:30 - 9:20</td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">9:20 - 10:10</td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:10 - 11:00</td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics Lab</div>
+                                <div class="teacher">Lab 1</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">Environmental Science</div>
+                                <div class="teacher">Dr. S. Gupta</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:00 - 11:15</td>
+                            <td class="short-break-cell" colspan="6">SHORT BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:15 - 12:05</td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics Lab</div>
+                                <div class="teacher">Lab 1</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:05 - 12:45</td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry Lab</div>
+                                <div class="teacher">Lab 2</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Library</div>
+                                <div class="teacher">Self Study</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:45 - 1:15</td>
+                            <td class="lunch-cell" colspan="6">LUNCH BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">1:15 - 2:05</td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry Lab</div>
+                                <div class="teacher">Lab 2</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Library</div>
+                                <div class="teacher">Self Study</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">2:05 - 2:55</td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">2:55 - 3:30</td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <button id="downloadBtn" class="download-btn">
+                <span class="download-icon"></span>
+                <span class="download-text">Download Timetable</span>
+                <div class="download-progress"></div>
+            </button>
+        </div>
+
+        <!-- 3rd Year Timetable -->
+        <div class="timetable-container" id="year3-timetable">
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-col">8:30 - 9:20</td>
+                        <td>
+                            <tr>
+                                <td class="time-col">8:30 - 9:20</td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics</div>
+                                    <div class="teacher">Dr. S. Mehta</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Programming</div>
+                                    <div class="teacher">Prof. A. Sharma</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td class="lab-cell">
+                                    <div class="subject">Programming Lab</div>
+                                    <div class="teacher">Lab 3</div>
+                                </td>
+                                <td>
+                                    <div class="subject">English</div>
+                                    <div class="teacher">Dr. P. Nair</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">9:20 - 10:10</td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics</div>
+                                    <div class="teacher">Dr. S. Mehta</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Programming</div>
+                                    <div class="teacher">Prof. A. Sharma</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td class="lab-cell">
+                                    <div class="subject">Programming Lab</div>
+                                    <div class="teacher">Lab 3</div>
+                                </td>
+                                <td>
+                                    <div class="subject">English</div>
+                                    <div class="teacher">Dr. P. Nair</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">10:10 - 11:00</td>
+                                <td>
+                                    <div class="subject">Chemistry</div>
+                                    <div class="teacher">Dr. M. Iyer</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Workshop</div>
+                                    <div class="teacher">Prof. K. Reddy</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics Lab</div>
+                                    <div class="teacher">Lab 1</div>
+                                </td>
+                                <td class="lab-cell">
+                                    <div class="subject">Programming Lab</div>
+                                    <div class="teacher">Lab 3</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Environmental Science</div>
+                                    <div class="teacher">Dr. S. Gupta</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">11:00 - 11:15</td>
+                                <td class="short-break-cell" colspan="6">SHORT BREAK</td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">11:15 - 12:05</td>
+                                <td>
+                                    <div class="subject">Chemistry</div>
+                                    <div class="teacher">Dr. M. Iyer</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Workshop</div>
+                                    <div class="teacher">Prof. K. Reddy</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics Lab</div>
+                                    <div class="teacher">Lab 1</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Engineering Drawing</div>
+                                    <div class="teacher">Prof. V. Menon</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">12:05 - 12:45</td>
+                                <td>
+                                    <div class="subject">Engineering Drawing</div>
+                                    <div class="teacher">Prof. V. Menon</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics</div>
+                                    <div class="teacher">Dr. S. Mehta</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Chemistry Lab</div>
+                                    <div class="teacher">Lab 2</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Programming</div>
+                                    <div class="teacher">Prof. A. Sharma</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Library</div>
+                                    <div class="teacher">Self Study</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">12:45 - 1:15</td>
+                                <td class="lunch-cell" colspan="6">LUNCH BREAK</td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">1:15 - 2:05</td>
+                                <td>
+                                    <div class="subject">Engineering Drawing</div>
+                                    <div class="teacher">Prof. V. Menon</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics</div>
+                                    <div class="teacher">Dr. S. Mehta</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Chemistry Lab</div>
+                                    <div class="teacher">Lab 2</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Programming</div>
+                                    <div class="teacher">Prof. A. Sharma</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Mathematics I</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Library</div>
+                                    <div class="teacher">Self Study</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">2:05 - 2:55</td>
+                                <td>
+                                    <div class="subject">Workshop</div>
+                                    <div class="teacher">Prof. K. Reddy</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Chemistry</div>
+                                    <div class="teacher">Dr. M. Iyer</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics</div>
+                                    <div class="teacher">Dr. S. Mehta</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Tutorial</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">English</div>
+                                    <div class="teacher">Dr. P. Nair</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Tutorial</div>
+                                    <div class="teacher">Prof. A. Sharma</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-col">2:55 - 3:30</td>
+                                <td>
+                                    <div class="subject">Workshop</div>
+                                    <div class="teacher">Prof. K. Reddy</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Chemistry</div>
+                                    <div class="teacher">Dr. M. Iyer</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Physics</div>
+                                    <div class="teacher">Dr. S. Mehta</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Tutorial</div>
+                                    <div class="teacher">Dr. R. Kumar</div>
+                                </td>
+                                <td>
+                                    <div class="subject">English</div>
+                                    <div class="teacher">Dr. P. Nair</div>
+                                </td>
+                                <td>
+                                    <div class="subject">Tutorial</div>
+                                    <div class="teacher">Prof. A. Sharma</div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <button id="downloadBtn" class="download-btn">
+                <span class="download-icon"></span>
+                <span class="download-text">Download Timetable</span>
+                <div class="download-progress"></div>
+            </button>
+        </div>
+
+        <!-- 4th Year Timetable -->
+        <div class="timetable-container" id="year4-timetable">
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <tr>
+                            <td class="time-col">8:30 - 9:20</td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">9:20 - 10:10</td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:10 - 11:00</td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics Lab</div>
+                                <div class="teacher">Lab 1</div>
+                            </td>
+                            <td class="lab-cell">
+                                <div class="subject">Programming Lab</div>
+                                <div class="teacher">Lab 3</div>
+                            </td>
+                            <td>
+                                <div class="subject">Environmental Science</div>
+                                <div class="teacher">Dr. S. Gupta</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:00 - 11:15</td>
+                            <td class="short-break-cell" colspan="6">SHORT BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:15 - 12:05</td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics Lab</div>
+                                <div class="teacher">Lab 1</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:05 - 12:45</td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry Lab</div>
+                                <div class="teacher">Lab 2</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Library</div>
+                                <div class="teacher">Self Study</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:45 - 1:15</td>
+                            <td class="lunch-cell" colspan="6">LUNCH BREAK</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">1:15 - 2:05</td>
+                            <td>
+                                <div class="subject">Engineering Drawing</div>
+                                <div class="teacher">Prof. V. Menon</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry Lab</div>
+                                <div class="teacher">Lab 2</div>
+                            </td>
+                            <td>
+                                <div class="subject">Programming</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                            <td>
+                                <div class="subject">Mathematics I</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">Library</div>
+                                <div class="teacher">Self Study</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">2:05 - 2:55</td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">2:55 - 3:30</td>
+                            <td>
+                                <div class="subject">Workshop</div>
+                                <div class="teacher">Prof. K. Reddy</div>
+                            </td>
+                            <td>
+                                <div class="subject">Chemistry</div>
+                                <div class="teacher">Dr. M. Iyer</div>
+                            </td>
+                            <td>
+                                <div class="subject">Physics</div>
+                                <div class="teacher">Dr. S. Mehta</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Dr. R. Kumar</div>
+                            </td>
+                            <td>
+                                <div class="subject">English</div>
+                                <div class="teacher">Dr. P. Nair</div>
+                            </td>
+                            <td>
+                                <div class="subject">Tutorial</div>
+                                <div class="teacher">Prof. A. Sharma</div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <button id="downloadBtn" class="download-btn">
+                <span class="download-icon"></span>
+                <span class="download-text">Download Timetable</span>
+                <div class="download-progress"></div>
+            </button>
+        </div>
+    </div>
+
+  <script src="time-table.js"></script> 
+</body>
+</html>

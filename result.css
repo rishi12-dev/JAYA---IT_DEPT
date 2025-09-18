@@ -1,0 +1,829 @@
+        :root {
+            --primary: #2c3e50;
+            --secondary: #1a252f;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --warning: #f39c12;
+            --glass: rgba(255, 255, 255, 0.2);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #dfe6e9 100%);
+            color: var(--dark);
+            min-height: 100vh;
+            overflow-x: hidden;
+        } */
+        
+        /* .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        } */
+        
+        header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .college-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Admin Login Modal */
+        .admin-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+        
+        .admin-btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+            transform: translateY(-30px);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+        
+        .modal.show .modal-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .modal-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--dark);
+            transition: all 0.3s ease;
+        }
+        
+        .close-btn:hover {
+            color: var(--accent);
+            transform: rotate(90deg);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+        
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 100%;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-secondary {
+            background: #95a5a6;
+        }
+        
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+        
+        /* Admin Panel */
+        .admin-panel {
+            display: none;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .admin-welcome {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .admin-welcome h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .upload-section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .file-upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            border: 2px dashed #bdc3c7;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+        
+        .file-upload:hover {
+            border-color: var(--accent);
+            background: rgba(52, 152, 219, 0.05);
+        }
+        
+        .file-upload i {
+            font-size: 3.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .file-upload input {
+            display: none;
+        }
+        
+        .file-upload label {
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .file-upload label:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .file-info {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        
+        .alert {
+            padding: 18px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            display: none;
+            font-weight: 500;
+        }
+        
+        .alert-success {
+            background: rgba(39, 174, 96, 0.15);
+            border: 2px solid var(--success);
+            color: var(--success);
+        }
+        
+        .alert-danger {
+            background: rgba(231, 76, 60, 0.15);
+            border: 2px solid var(--danger);
+            color: var(--danger);
+        }
+        
+        /* Manual Entry Section */
+        .manual-entry {
+            margin-top: 40px;
+        }
+        
+        .manual-entry-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .manual-entry-form .form-group {
+            margin-bottom: 0;
+        }
+        
+        .marks-entry {
+            margin-top: 30px;
+        }
+        
+        .marks-entry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        /* Student Search */
+        .student-search {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .search-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .search-form .form-group {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        /* Result Display */
+        .result-container {
+            display: none;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: slideIn 0.5s ease;
+        }
+        
+        .result-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .result-title {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .result-subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+        
+        .student-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .student-info div {
+            margin-bottom: 15px;
+        }
+        
+        .student-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        .student-detail {
+            font-size: 1rem;
+            color: #34495e;
+        }
+        
+        .student-detail span {
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .marks-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .marks-table th, .marks-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .marks-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 500;
+        }
+        
+        .marks-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .marks-table tr:hover {
+            background: #ecf0f1;
+        }
+        
+        .result-summary {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+        
+        .total-marks {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .result-status {
+            font-size: 1.3rem;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+        
+        .result-status.pass {
+            background: rgba(39, 174, 96, 0.15);
+            color: var(--success);
+        }
+        
+        .result-status.fail {
+            background: rgba(231, 76, 60, 0.15);
+            color: var(--danger);
+        }
+        
+        /* Anna University Section */
+        .anna-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .anna-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .anna-link:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .anna-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .anna-info i {
+            color: var(--accent);
+            margin-right: 10px;
+        }
+        
+        /* Chatbot */
+        .chatbot-container {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 100;
+        }
+        
+        .chatbot-btn {
+            background: var(--primary);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .chatbot-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            animation: pulse 2s infinite;
+            z-index: -1;
+        }
+        
+        .chatbot-btn:hover {
+            background: var(--secondary);
+            transform: scale(1.1);
+        }
+        
+        .chatbot-btn i {
+            font-size: 1.8rem;
+        }
+        
+        .chatbot-window {
+            position: absolute;
+            bottom: 90px;
+            right: 0;
+            width: 380px;
+            max-width: 90vw;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            animation: slideUp 0.4s ease;
+            z-index: 101;
+        }
+        
+        .chatbot-header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chatbot-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .chatbot-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .chatbot-close:hover {
+            transform: rotate(90deg);
+        }
+        
+        .chatbot-messages {
+            padding: 20px;
+            height: 350px;
+            overflow-y: auto;
+            flex-grow: 1;
+            background: #f8f9fa;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            max-width: 80%;
+            padding: 12px 18px;
+            border-radius: 18px;
+            line-height: 1.5;
+            animation: fadeIn 0.3s ease;
+            font-size: 0.95rem;
+            position: relative;
+        }
+        
+        .bot-message {
+            background: white;
+            border-top-left-radius: 5px;
+            align-self: flex-start;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .user-message {
+            background: var(--primary);
+            color: white;
+            border-top-right-radius: 5px;
+            margin-left: auto;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chatbot-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #eee;
+            background: white;
+        }
+        
+        .chatbot-input input {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 30px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .chatbot-input input:focus {
+            border-color: var(--accent);
+        }
+        
+        .chatbot-input button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-left: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .chatbot-input button:hover {
+            background: var(--secondary);
+            transform: rotate(15deg);
+        }
+        
+        /* Preloader */
+        .preloader {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-left-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.7;
+            }
+            70% {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .manual-entry-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .marks-entry-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .student-info {
+                flex-direction: column;
+            }
+            
+            .result-summary {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .chatbot-window {
+                width: 320px;
+                right: -20px;
+            }
+            
+            .admin-panel, .student-search, .result-container, .anna-section {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .admin-btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .modal-content {
+                padding: 30px;
+            }
+            
+            .marks-entry-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chatbot-window {
+                width: 300px;
+                right: -40px;
+            }
+            
+            .chatbot-container {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .chatbot-btn {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .admin-panel, .student-search, .result-container, .anna-section {
+                padding: 25px;
+            }
+        }
+
